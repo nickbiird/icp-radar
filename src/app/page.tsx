@@ -772,12 +772,25 @@ export default function Home() {
         <form onSubmit={handleSearch} className="search-form">
           <div className="form-group">
             <label className="form-label" htmlFor="query-input">
-              Product Value Proposition
+              Describe what you sell — and who you sell it to
             </label>
+            <p
+              style={{
+                color: "var(--text-muted)",
+                fontSize: "0.8rem",
+                margin: "0 0 0.5rem",
+                lineHeight: 1.45,
+              }}
+            >
+              Tip: include your ideal customer, not just your product.
+              &ldquo;Invoice-auditing software <strong>for logistics SMEs with
+              manual back-office processes</strong>&rdquo; finds better-fit
+              accounts than the product alone.
+            </p>
             <textarea
               id="query-input"
               className="textarea-input"
-              placeholder="e.g. We sell automated data auditing software for heavy industry and logistics SMEs to verify invoice lines..."
+              placeholder="e.g. We sell automated invoice-auditing software to logistics and heavy-industry SMEs that still reconcile supplier invoices by hand..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               disabled={loadingData || isSearching}
@@ -1274,6 +1287,22 @@ export default function Home() {
 
                 {/* Results Grid List */}
                 <section className="results-section">
+                  <p
+                    className="results-count"
+                    style={{
+                      color: "var(--text-muted)",
+                      fontSize: "0.85rem",
+                      lineHeight: 1.5,
+                      margin: "0 0 1rem",
+                      maxWidth: "70ch",
+                    }}
+                  >
+                    Showing the {filteredResults.length} European startups whose
+                    profile best matches your description, ranked by semantic
+                    fit. These are your highest-potential target accounts to
+                    research and reach out to — fit is based on meaning, not a
+                    guarantee of buying intent.
+                  </p>
                   <div className="results-header">
                     <div className="flex-row-center">
                       <input
