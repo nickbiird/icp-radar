@@ -2,7 +2,7 @@
 
 **Semantic sales intelligence over 3,756 European startups — runs entirely in your browser, costs $0 to host.**
 
-🔗 **Live:** _<!-- deploy URL goes here -->_ · 🧠 **How it works (plain language):** [HOW_IT_WORKS.md](./HOW_IT_WORKS.md)
+🔗 **Live:** [icp-radar.vercel.app](https://icp-radar.vercel.app/) · 🧠 **How it works (plain language):** [HOW_IT_WORKS.md](./HOW_IT_WORKS.md)
 
 ---
 
